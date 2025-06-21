@@ -1,6 +1,7 @@
 package Pages;
 
 import Common.SuperTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,10 @@ public class TestCasesPage {
     }
 
     public void printTestCasesDescriptions(){
-        System.out.println("Voy");
+        System.out.println("Descripciones: ");
+        for(WebElement content: testCasesList){
+            System.out.println(content.getText());
+        }
     }
 
 

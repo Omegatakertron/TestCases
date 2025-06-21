@@ -1,6 +1,12 @@
 <suite name="Testeame">
     <test name="MyTest">
         <classes>
+            <class name="Test.TestCase1"/>
+            <class name="Test.TestCase2"/>
+            <class name="Test.TestCase3"/>
+            <class name="Test.TestCase4"/>
+            <class name="Test.TestCase5"/>
+            <class name="Test.TestCase6"/>
             <class name="Test.TestCase7"/>
         </classes>
     </test>
