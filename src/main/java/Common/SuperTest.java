@@ -17,7 +17,6 @@ public class SuperTest {
 
     @BeforeMethod
     public void launchUrl(){
-        System.setProperty("Webdriver.chrome.driver", "C:\\Chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.automationexercise.com/");
 
@@ -35,7 +34,7 @@ public class SuperTest {
         int randomNum = 10000 + random.nextInt(9000);
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File(from + randomNum + ".png");
+        File destFile = new File("./screenshots/" + from + randomNum + ".png");
 
         try{
             FileUtils.copyFile(srcFile, destFile);

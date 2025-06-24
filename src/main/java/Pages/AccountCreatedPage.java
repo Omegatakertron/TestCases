@@ -15,11 +15,9 @@ public class AccountCreatedPage {
 
     public AccountCreatedPage(){
         PageFactory.initElements(SuperTest.driver, this);
-        SuperTest.captureScreenshot("AccountCreated");
     }
 
     public void clickContinueBtn(){
         continueBtn.click();
-        SuperTest.captureScreenshot("AccountCreated");
     }
 }
